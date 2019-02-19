@@ -1,0 +1,162 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /*font-size: 100 %;*/
+    vertical-align: baseline;
+    background: transparent;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: 'Open Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.highlight {
+    color: #B10E3C;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 740px;
+}
+
+.container .leading-text {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    text-align: left;
+    line-height: 3rem;
+
+
+}
+
+.container header {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+header .heading2 {
+    display: none;
+}
+
+.container .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.container .button {
+    width: 49%;
+    margin: 1rem 0;
+}
+
+.container .button a:hover,
+.container .move_button a:hover {
+    opacity: 0.7;
+}
+
+.container .move_button {
+    margin: 3rem auto;
+}
+
+.container .move_button img {
+    width: 90%;
+    height: auto;
+}
+
+.container .bold {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.container .index {
+    font-size: 1.8rem;
+    color: #BEAC6E;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-bottom: 3px solid #BEAC6E;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+}
+
+a.anchor {
+    display: block;
+    padding-top: 12rem;
+    margin-top: -12rem;
+}
+
+@media (min-width: 750px) {
+
+    header .heading1 {
+        display: none;
+    }
+
+    header .heading2 {
+        display: inline-block;
+    }
+
+    .container {
+        margin: 0 auto;
+        min-width: 980px;
+    }
+
+    .container .button {
+        width: 24%;
+        margin: 1rem 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+    }
+
+    .container .bold {
+        display: inline;
+        font-size: 100%;
+    }
+
+    .index br {
+        display: none;
+    }
+
+    .container .index {
+        text-align: left;
+    }
+
+    a.anchor {
+        display: block;
+        padding-top: 7rem;
+        margin-top: -7rem;
+    }
+
+
+}
+
+
+
