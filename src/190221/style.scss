@@ -1,0 +1,108 @@
+/* 変数の宣言が可能になる */
+$test-red:red;
+$test-color2:#ff0000;
+
+h1{
+  color: $test-red;
+}
+
+
+
+
+.header{
+  width: 100%;
+  ul{
+    padding: 10px;
+    li{
+      font-size: 15px;
+    }
+  }
+}
+
+/* divにカーソルが乗ったときに変化する */
+div:hover{
+  background-color: red;
+}
+
+/* active は要素がクリックされている間だけ適用される */
+span:active{
+  position:relative;//元の位置からの参照
+  top:7px;
+  box-shadow: none;
+}
+
+/* ---------------------------------------------- */
+
+/* css通常の書き方 */
+li{
+  font-size: 15px;
+}
+li:hover{
+  background-color: red;
+}
+/* ----------------------------------------------- */
+
+/* scssの書き方 & で入れ子構造にする */
+li{
+  font-size: 15px;
+  &:hover{
+    background-color: red;
+  }
+}
+
+/* 幾つかのコードを１つにまとめる機能 mixin */
+@mixin test-card {
+  width: 300px;
+  padding: 40px;
+  background-color: #FFFFFF;
+
+}
+
+/* つくった変数(mixin)を呼び出す */
+.lesson-1{
+  @include test-card;
+}
+/* mixin の使い方２  引数を渡す */
+
+/* まず渡さない場合 */
+@mixin font-data{
+  font-size: 14px;
+  color: black;
+}
+.card{
+  @include font-data;
+  color: red;//色を黒から赤へ変更した
+}
+
+/* 引数を使う場合 仮引数で用意する*/
+@mixin font-data2($color){
+  font-size: 14px;
+  color: $color;
+}
+
+.card{
+  @include font-data2(#FF0000);//一行で処理が済む
+}
+
+/* ------------------------------------------------------- */
+
+/* 用意されている関数  色の入力割合を調整できる
+   ほかにも
+   lighten(色を明るくする)
+   rgba(色の不透明度を指定する関数)
+ */
+.card{
+  color:darken($test-color2,10%);
+}
+
+/* -------------------------------------------------------- */
+
+/* import機能  アンダーバーをつけたscssファイルを@importで読み込むことができる */
+@import "test";
+.html{
+  background-color: $html;//_test.scss の変数を使っている
+}
+
+/* import関数の使い方としては、変数をまとめたファイルを作成し、例えば色をそこで全て書き出す
+    そうすれば次からはscssのファイルはすべてそこから色指定ができる
+ */
