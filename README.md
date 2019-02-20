@@ -1,4 +1,4 @@
 # Today I learned
 
-２０１９．２．２０　課題制作　レスポンシブサイト（flexbox , css-grid , Autoprefix　）
-2019.2.21 saas学習 コメントアウトでまとめてあります。
+2019/02/20　課題制作　レスポンシブサイト（flexbox , css-grid , Autoprefix　）<br>
+2019/02/21 saas学習 コメントアウトでまとめてあります。
