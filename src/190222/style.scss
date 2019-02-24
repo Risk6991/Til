@@ -1,0 +1,35 @@
+$base_color:#3F51B5;
+$font_color:#333333;
+$font_color2:#FFFFFF;
+$font_line_color:#000000;
+$font_line_color2:#E81919;
+
+$font: Yu Gothic;
+$font_size:Bold - 68px #333333;
+$font_size2:Bold - 38px #333333;
+$font_size3:Bold - 38px #FFFFFF;
+$font_size4:Regular - 16px #FFFFFF;
+
+/*
+
+opacity
+透明度を変更する
+ex. filter: opacity(50%);
+
+brightness
+明るさを変更する
+ex. filter: brightness(0.5);
+
+blur
+ガウスぼかしを適用する（今回使いたいのはコレ）
+ex. filter: blur(5px);
+
+drop-shadow
+ドロップシャドウ効果（影をつける）を適用する
+box-shadowとかtext-shadow的なやつ
+ex. filter: drop-shadow(16px 16px 10px black);
+影の色: #000000 10%
+
+
+ position: fixed; でメニューバーを固定する
+*/
