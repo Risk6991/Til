@@ -1,0 +1,17 @@
+.global-nav {
+  > .nav {
+    display: flex;
+  }
+}
+
+.item {
+  padding: 0 15px;
+
+  &:nth-child(5) {
+    padding-right: 140px;
+  }
+
+  > .effect {
+    text-decoration: none;
+  }
+}

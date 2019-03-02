@@ -1,0 +1,7 @@
+/* RSCSSでの記述 */
+@import "scss/common-header", "scss/global-nav", "scss/site-title";
+
+.inner {
+  margin: 0 auto;
+  min-width: 1366px;
+}

@@ -1,0 +1,13 @@
+$header_color: #3F51B5;
+$header_font_color: #FFFFFF;
+.common-header {
+  background-color: $header_color;
+  color: $header_font_color;
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+
+  > .right {
+    width: 344px;
+  }
+}
