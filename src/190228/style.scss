@@ -1,7 +1,9 @@
 /* RSCSSでの記述 */
 @import "scss/common-header", "scss/global-nav", "scss/site-title";
+@import "scss/main-block", "scss/main-text", "scss/sub-text", "scss/btn-contact";
 
 .inner {
   margin: 0 auto;
-  min-width: 1366px;
+  width: 100%;
+  max-width: 1366px;
 }

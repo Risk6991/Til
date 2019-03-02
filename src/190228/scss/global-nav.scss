@@ -1,14 +1,17 @@
 .global-nav {
   > .nav {
     display: flex;
+    padding-top: 4rem;
+    padding-bottom: 3.9rem;
+    padding-right: 14rem;
   }
 }
 
 .item {
-  padding: 0 15px;
+  padding-right: 3rem;
 
   &:nth-child(5) {
-    padding-right: 140px;
+    padding-right: 0;
   }
 
   > .effect {
