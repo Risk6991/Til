@@ -1,13 +1,7 @@
-$font: Yu Gothic;
-$font_size: Bold - 68px #333333;
-$font_size2: Bold - 38px #333333;
-$font_size3: Bold - 38px #FFFFFF;
-$font_size4: Regular - 16px #FFFFFF;
-
 .main-text {
   > .text {
-    padding-top: 149px;
+    padding-top: 14.9rem;
     font-size: 6.8rem;
+    z-index: 1;
   }
-
 }

@@ -2,6 +2,21 @@
   width: 100%;
   height: 60rem;
   text-align: center;
-  background-image: url("http://localhost:63342/project_work2/src/190228/bunner.png?_ijt=ob08p4johjogttuu67qc0eul2t");
+  background: url("http://localhost:63342/project_work2/src/190228/bunner.png?_ijt=ob08p4johjogttuu67qc0eul2t") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden; /*ブラー効果でボヤけた部分を非表示*/
 
+  > .move {
+    margin-top: 8.2rem;
+  }
+}
+
+.main-block:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  filter: opacity(60%);
 }

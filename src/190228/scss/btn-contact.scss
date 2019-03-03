@@ -1,7 +1,18 @@
+$btn_font_color: #FFFFFF;
+$btn_background_color: #3F51B5;
 .btn-contact {
   > .btn {
+    font-size: 38px;
+    font-weight: bold;
+    color: $btn_font_color;
+    background-color: $btn_background_color;
+    padding: 1.7rem 8.1rem;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 
-
+    &:hover {
+      opacity: 0.7;
+    }
     &.effect {
       text-decoration: none;
     }
