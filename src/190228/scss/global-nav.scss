@@ -1,27 +1,25 @@
 .global-nav {
+  > .layout {
+    margin-top: 4rem;
+  }
   > .nav {
+    width: 34.4rem;
+    height: 25.5px;
     display: flex;
-    padding-top: 4rem;
-    padding-bottom: 3.9rem;
-    padding-right: 14rem;
   }
 }
 
 .item {
   padding-right: 3rem;
-  font-size: 1.6rem;
   font-weight: normal;
-
   &:nth-child(5) {
     padding-right: 0;
   }
-
   > .effect {
     text-decoration: none;
-
     &:hover {
-      padding-bottom: 5px;
       border-bottom: solid 2px red;
+      padding-bottom: 1rem;
     }
   }
 }

@@ -1,12 +1,16 @@
 .site-title {
+  height: 4rem;
+  margin-right: auto;
+
+  > .layout {
+    margin-top: 3.1rem;
+  }
+
   > .logo {
-    padding-left: 14rem;
-    padding-top: 3.1rem;
-    padding-bottom: 3rem;
+    height: 3.9rem;
 
     &:hover {
       opacity: 0.7;
-
     }
   }
 }
