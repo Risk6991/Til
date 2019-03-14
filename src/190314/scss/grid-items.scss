@@ -1,0 +1,24 @@
+.grid-items {
+  display: flex;
+  justify-content: center;
+
+  > .item {
+    flex-basis: 76px;
+    height: 701px;
+    margin-right: 16px;
+    background: rgba(0, 0, 255, 0.25);
+
+    &:nth-child(12) {
+      margin-right: 0;
+    }
+
+
+    /*  両端のマージンを消す場合とテスト
+
+    //lex-shrink: 0;
+
+    //float: left;
+    //clearfixについて調べておくこと
+*/
+  }
+}

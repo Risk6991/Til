@@ -1,0 +1,12 @@
+.nav-menu {
+  > .menu {
+    display: flex;
+
+    > .item {
+      width: 20%;
+      padding: 0 15px;
+      background-color: #b3d4fc;
+      //float: left;
+    }
+  }
+}
