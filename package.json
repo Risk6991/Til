@@ -39,7 +39,11 @@
         "jest-puppeteer": "^4.1.1",
         "prettier": "^1.19.1",
         "puppeteer": "^1.16.0",
-        "reg-suit": "^0.8.6"
+        "reg-suit": "^0.8.6",
+        "stylelint": "^13.0.0",
+        "stylelint-config-recess-order": "^2.0.3",
+        "stylelint-config-standard": "^19.0.0",
+        "stylelint-scss": "^3.13.0"
     },
     "dependencies": {
         "jquery": "^3.4.1"
