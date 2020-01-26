@@ -1,0 +1,39 @@
+.c-menubar {
+  position: sticky;
+  bottom: -1px;
+  z-index: 99999;
+  display: flex;
+  width: $width100;
+  max-width: $max-width;
+  height: rem(60);
+  color: #333;
+  background: #fff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.c-menubar__list {
+  display: flex;
+  position: relative;
+  width: $width100;
+}
+
+.c-iconArea__icon {
+  width: rem(20);
+  height: rem(25);
+  line-height: 1;
+}
+
+.c-iconArea {
+  width: rem(65);
+  height: rem(50);
+  padding: 0;
+}
+
+.c-iconArea--test {
+  width: 65px;
+  height: 50px;
+  padding: 0;
+  position: absolute;
+  top:-16px;
+  left: 41%;
+}

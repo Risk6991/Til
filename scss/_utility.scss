@@ -1,0 +1,203 @@
+/**
+*   Utility
+*   調整用のクラス
+*   margin、paddingを付与するのに使用
+*   他種類のパーツ間の空き調整や、パーツとして認められないような、自由な振る舞いをする要素に対してはこちらのクラスを使用
+*   接頭辞としてu-をつける
+**/
+
+.u-margin-right5 {
+  margin-right: rem(5);
+}
+
+.u-margin-right10 {
+  margin-right: rem(10);
+}
+
+.u-margin-right20 {
+  margin-right: rem(20);
+}
+
+.u-margin-left5 {
+  margin-left: rem(5);
+}
+
+.u-margin-left10 {
+  margin-left: rem(10);
+}
+
+.u-margin-left20 {
+  margin-left: rem(20);
+}
+
+.u-margin-right45 {
+  margin-right: rem(45);
+}
+
+.u-margin-left45 {
+  margin-left: rem(45);
+}
+
+.u-margin-bottom5 {
+  margin-bottom: rem(5);
+}
+
+.u-margin-bottom10 {
+  margin-bottom: rem(10);
+}
+
+.u-margin-bottom20 {
+  margin-bottom: rem(20);
+}
+
+.u-margin-bottom30 {
+  margin-bottom: rem(30);
+}
+
+.u-margin-bottom40 {
+  margin-bottom: rem(40);
+}
+
+.u-margin-top5 {
+  margin-top: rem(5);
+}
+
+.u-margin-top10 {
+  margin-top: rem(10);
+}
+
+.u-margin-top20 {
+  margin-top: rem(20);
+}
+
+.u-margin-top30 {
+  margin-top: rem(30);
+}
+
+.u-padding-top5 {
+  padding-top: rem(5);
+}
+
+.u-padding-top10 {
+  padding-top: rem(10);
+}
+
+.u-padding-top15 {
+  padding-top: 15px;
+}
+
+.u-padding-top20 {
+  padding-top: rem(20);
+}
+
+.u-padding-top30 {
+  padding-top: rem(30);
+}
+
+
+.u-padding-bottom5 {
+  padding-bottom: rem(5);
+}
+
+.u-padding-bottom10 {
+  padding-bottom: rem(10);
+}
+
+.u-padding-bottom15 {
+  padding-bottom: 15px;
+}
+
+.u-padding-bottom20 {
+  padding-bottom: rem(20);
+}
+
+.u-padding-left5 {
+  padding-left: rem(5);
+}
+
+.u-padding-left10 {
+  padding-left: rem(10);
+}
+
+.u-padding-left20 {
+  padding-left: rem(20);
+}
+
+.u-padding-right5 {
+  padding-right: rem(5);
+}
+
+.u-padding-right10 {
+  padding-right: rem(10);
+}
+
+.u-padding-right20 {
+  padding-right: rem(20);
+}
+
+.u-padding-all5 {
+  padding: rem(5);
+}
+
+.u-padding-all10 {
+  padding: rem(10);
+}
+
+.u-padding-all15 {
+  padding: rem(15);
+}
+
+.u-padding-all20 {
+  padding: rem(20);
+}
+
+.u-padding-side5 {
+  padding-right: rem(5);
+  padding-left: rem(5);
+}
+
+.u-padding-side10 {
+  padding-right: rem(10);
+  padding-left: rem(10);
+}
+
+.u-padding-side15 {
+  padding-right: rem(15);
+  padding-left: rem(15);
+}
+
+.u-padding-side20 {
+  padding-right: rem(20);
+  padding-left: rem(20);
+}
+
+//パーセンテージ指定
+.u-margin-right30p {
+  margin-right: 30%;
+}
+
+.u-margin-left5p {
+  margin-left: 5%;
+}
+
+.u-margin-left10p {
+  margin-left: 10%;
+}
+
+.u-padding-right5p {
+  padding-right: 5%;
+}
+
+.u-padding-left5p {
+  padding-left: 5%;
+}
+
+.u-padding-side5p {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.u-padding-side10p {
+  padding-right: 10%;
+  padding-left: 10%;
+}

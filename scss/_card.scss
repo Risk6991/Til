@@ -1,0 +1,86 @@
+.c-card {
+  width: calc(100% - 40px);
+  max-width: 538px;
+  height: auto;
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+//フルサイズ表示用
+.c-card--full {
+  width: 100%;
+  max-width: 538px;
+  height: auto;
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+
+.c-card__image {
+  display: block; //resetCSSがmergeされれば不要になる想定
+  position: relative;
+  width: 100%;
+  padding-top: 66.7655%;
+  max-width: 538px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+
+.c-card__timeTable {
+  width: 100%;
+  height: auto;
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.c-card__timeTable__item {
+  width: (100% / 3);
+  height: auto;
+  background: #fff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.c-titleArea {
+  width: 100%;
+  height: rem(60);
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+//車両詳細の画像イメージエリア。サイズがトップと若干異なる
+.c-carImage {
+  width: 100%;
+  height: rem(328);
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+//車両詳細の画像
+.c-carImage__image {
+  width: rem(375);
+  height: rem(255);
+  border-radius: 3px 3px 0 0;
+  opacity: 1;
+}
+
+//ステータスアイコン設置用のクラス
+.c-carDetail {
+  position: relative;
+}
+
+.c-carDetail__title {
+  width: 90%;
+}
+
+.c-card__landmark {
+  width: 70%;
+}
+
+.c-card__carDetail {
+  width: 30%;
+}

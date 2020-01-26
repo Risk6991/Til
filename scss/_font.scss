@@ -1,0 +1,477 @@
+/**
+*   Font
+*   フォントの種類やサイズを管理・決定するクラス
+*   接頭辞としてf-をつける
+**/
+
+//rem指定用の関数
+//size:font-size(値)で指定してください。
+@mixin font-size($size, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) + rem;
+}
+
+/* 汎用レスポンシブフォントサイズ調整 指定した画面サイズ(480px~1920px)に応じてレスポンシブで設定したsize(9~12px)で可変する
+*responsive-font-calculator
+* https://websemantics.uk/tools/responsive-font-calculator/
+*/
+$responsive-font-9-12: calc(0.5625rem + ((1vw - 3.75px) * 0.1942));
+
+//金額表示用のフォント指定
+  $font-family: Helvetica, Verdana, sans-serif;
+
+.f-fontTitle {
+  @include font-size(18);
+  font-weight: 600;
+  line-height: 1.4;
+  color: $color-text;
+  letter-spacing: 0.72px;
+  opacity: 1;
+}
+
+.f-fontSubTitle {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1.2;
+  color: $color-text2;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontIndex {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1.33;
+  color: $color-text;
+  letter-spacing: 0.72px;
+  opacity: 1;
+}
+
+.f-fontIndex2 {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1.36;
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontList {
+  @include font-size(14);
+  font-weight: 500;
+  line-height: 2;
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-paragraph {
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-paragraph-small {
+  @include font-size(12);
+  font-weight: 300;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-font-btn {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1.07;
+  color: $color-text;
+  text-align: center;
+  letter-spacing: 0.56px;
+  opacity: 1;
+}
+
+.f-font-btn--white {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1.07;
+  color: $color-white;
+  text-align: center;
+  letter-spacing: 0.56px;
+  opacity: 1;
+}
+
+.f-font-btn--green {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1.2;
+  color: $color-main;
+  text-align: center;
+  letter-spacing: 0.56px;
+  opacity: 1;
+}
+
+.f-fontLink {
+  color: $color-main;
+  letter-spacing: 0;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontLocation {
+  @include font-size(16);
+  font-weight: 600;
+  line-height: 1.2;
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontTime {
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontPrice {
+  font-family: $font-family;
+  @include font-size(24);
+  font-weight: 400;
+  line-height: 1.2;
+  color: $color-text;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontPrice--hiLight {
+  font-family: $font-family;
+  @include font-size(24);
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-hiLight;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontYen {
+  font-family: $font-family;
+  letter-spacing: 0;
+}
+
+.f-fontYen--hiLight {
+  font-family: $font-family;
+  color: $color-hiLight;
+  letter-spacing: 0;
+}
+
+.f-fontAddress {
+  @include font-size(16);
+  line-height: 1.5;
+  color: $color-text2;
+  letter-spacing: 0;
+  opacity: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.f-fontIcon {
+  @include font-size(11);
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-icon;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.f-fontIcon--white {
+  @include font-size(11);
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-white;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.f-fontNewEntry {
+  @include font-size(30);
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-text;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontNewEntry__sub {
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color-text;
+  text-align: center;
+  letter-spacing: 1.6px;
+  opacity: 1;
+}
+
+.f-fontNickName {
+  font-weight: 600;
+  line-height: 1.2;
+  color: $color-text;
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontNickName--green {
+  font-weight: 600;
+  line-height: 1.5;
+  color: $color-main;
+  text-align: left;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.f-fontBookingCode {
+  @include font-size(24);
+  font-weight: 700;
+  line-height: 1.5;
+  color: $color-text;
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontDescription {
+  @include font-size(12);
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text;
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+//予約詳細のシェア期間に利用
+.f-fontDateTitle {
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text;
+  text-align: left;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontDateAndTime {
+  @include font-size(12);
+  font-weight: normal;
+  line-height: 1.5;
+  color: $color-text2;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontDateIndex {
+  font-weight: 700;
+  line-height: 1.5;
+  color: $color-text;
+  text-align: right;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontDateIndex--price {
+  @include font-size(24);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-text;
+  text-align: center;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.f-fontCheckAreaTitle {
+  font-weight: 600;
+  line-height: 1.4;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontCheckAreaIndex {
+  @include font-size(12);
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontIndex--yuGothic {
+  @include font-size(14);
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontRegisteredCarDetails__items {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontBankInfo__items {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontDeliveryPlaceList__link {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1;
+  color: $color-main;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontDeliveryPlaceList__items {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontMyPage__items {
+  @include font-size(14);
+  font-weight: 500;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontCreditInfo__items {
+  @include font-size(14);
+  font-weight: 600;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+//サインアップ画面の説明文用フォント
+.f-fontSignUp__description {
+  font-weight: 500;
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontSentEmail__description {
+  font-weight: 500;
+  line-height: 2;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontCarProfile__index {
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontCarDeliveryPlace__index {
+  font-weight: 500;
+  line-height: 2;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+//入力されるテキストのフォント設定
+.f-fontTextArea {
+  line-height: 1;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+//車両写真登録画面のコメント
+.f-fontCarProfile__comment {
+  line-height: 1.4;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+//ユーザー情報ページの大きめニックネーム用
+.f-fontUserInfoPage__nickName {
+  font-family: 'YuGothic';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontUserInfoPage__index {
+  font-family: 'YuGothic';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontUserInfoPage__index--honorific {
+  font-family: 'YuGothic';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-text2;
+  letter-spacing: 0px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.f-fontUserInfoPage__comment {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: $color-text;
+  letter-spacing: 0px;
+  opacity: 1;
+}
