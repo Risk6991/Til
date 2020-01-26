@@ -3,6 +3,7 @@
         "autoprefix",
         "flexbox",
         "oocss",
-        "rscss"
+        "rscss",
+        "ximgdiff"
     ]
 }
