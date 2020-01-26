@@ -1,35 +1,47 @@
 {
-  "name": "today-i-learned",
-  "version": "1.0.0",
-  "description": "practice-modern-frontend",
-  "main": "index.js",
-  "scripts": {
-    "e2e": "npx jest ./spec/e2e.spec.js",
-    "visual": "npx jest ./spec/visual.spec.js",
-    "visual-update": "npx jest ./spec/visual.spec.js --updateSnapshot",
-    "snap": "npx jest ./spec/snapshot.spec.js",
-    "lint":"npx eslint ./*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Risk6991/Til.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Risk6991/Til/issues"
-  },
-  "homepage": "https://github.com/Risk6991/Til#readme",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "jest": "^24.8.0",
-    "jest-image-snapshot": "^2.8.2",
-    "jest-puppeteer": "^4.1.1",
-    "puppeteer": "^1.16.0",
-    "reg-suit": "^0.8.6"
-  },
-  "dependencies": {
-    "jquery": "^3.4.1"
-  }
+    "name": "today-i-learned",
+    "version": "1.0.0",
+    "description": "practice-modern-frontend",
+    "main": "index.js",
+    "scripts": {
+        "e2e": "npx jest ./spec/e2e.spec.js",
+        "visual": "npx jest ./spec/visual.spec.js",
+        "visual-update": "npx jest ./spec/visual.spec.js --updateSnapshot",
+        "snap": "npx jest ./spec/snapshot.spec.js",
+        "lint": "npx eslint ./*.js",
+        "lint-fix": "npx eslint ./*.js --fix",
+        "prettier": "npx prettier ./*.html --write",
+        "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Risk6991/Til.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Risk6991/Til/issues"
+    },
+    "homepage": "https://github.com/Risk6991/Til#readme",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-cli": "^1.1.1",
+        "eslint-config-prettier": "^6.5.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "jest": "^24.8.0",
+        "jest-image-snapshot": "^2.8.2",
+        "jest-puppeteer": "^4.1.1",
+        "prettier": "^1.19.1",
+        "puppeteer": "^1.16.0",
+        "reg-suit": "^0.8.6"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1"
+    }
 }

@@ -8,4 +8,5 @@
 E2Eテストとビジュアルリグレッションテストがどんなものか学習。<br>
 C-Spell-Checkerのホワイトリストをディレクトリ内に追加。Cmd+Shift+pで呼び出して追加する。<br>
 下部エリアの問題のエリアはとにかく改善するように心がける。<br>
-画像比較ツールreg-suitの構築。.reg-actualと.reg/expectedに同名の異なるファイルを入れると差分を教えてくれる
+画像比較ツールreg-suitの構築。.reg-actualと.reg/expectedに同名の異なるファイルを入れると差分を教えてくれる<br>
+.vscodeに含まれるsetting.jsonを実務で使えるように修正
