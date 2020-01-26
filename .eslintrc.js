@@ -25,5 +25,8 @@ module.exports = {
         // ecmaVersion を指定してもこの記述を入れておかないと import/export 解析されない
         sourceType: 'module',
     },
-    rules: {},
+    rules: {
+        // Prettier の設定を記述していきます
+    "prettier/prettier": "error"
+    },
 };

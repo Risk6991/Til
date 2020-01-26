@@ -8,7 +8,8 @@
     "visual": "npx jest ./spec/visual.spec.js",
     "visual-update": "npx jest ./spec/visual.spec.js --updateSnapshot",
     "snap": "npx jest ./spec/snapshot.spec.js",
-    "lint": "npx eslint ./*.js"
+    "lint": "npx eslint ./*.js",
+    "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
