@@ -1,6 +1,7 @@
 module.exports = {
     env: {
         browser: true,
+        node:true,
         commonjs: true,
         es6: true,
         //JQuery対応
@@ -20,6 +21,9 @@ module.exports = {
         googletag: true,
         ga: true,
     },
+    plugins:[
+        "prettier"
+    ],
     parserOptions: {
         ecmaVersion: 2018,
         // ecmaVersion を指定してもこの記述を入れておかないと import/export 解析されない
