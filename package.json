@@ -4,7 +4,9 @@
   "description": "practice-modern-frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e": "npx jest ./spec/e2e.spec.js",
+    "visual": "npx jest ./spec/visual.spec.js",
+    "visual-update": "npx jest ./spec/visual.spec.js --updateSnapshot"
   },
   "repository": {
     "type": "git",
