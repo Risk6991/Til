@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/Risk6991/Til#readme",
   "devDependencies": {
-    "jquery": "^3.4.1",
     "jest": "^24.8.0",
     "jest-image-snapshot": "^2.8.2",
     "jest-puppeteer": "^4.1.1",
