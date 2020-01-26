@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Risk6991/Til/issues"
   },
-  "homepage": "https://github.com/Risk6991/Til#readme"
+  "homepage": "https://github.com/Risk6991/Til#readme",
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  }
 }
