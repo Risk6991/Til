@@ -1,13 +1,92 @@
 {
-    "cSpell.words": [
-        "adsense",
-        "autoprefix",
-        "flexbox",
-        "googletag",
-        "hoge",
-        "oocss",
-        "rscss",
-        "ximgdiff",
-        "yuki"
-    ]
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "git.enableSmartCommit": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // 保存時に整形するかどうか
+    "editor.formatOnSave": false,
+    //新しいESlintのformatOnSave設定
+    "editor.codeActionsOnSaveTimeout": 2000,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    // 以下はeslint --fixで行う。
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "editor.fontLigatures": true,
+    "editor.renderIndentGuides": true, // インデントのガイドの表示
+    "editor.renderLineHighlight": "all", // 選択行のハイライト
+    "editor.renderWhitespace": "all", // 半角スペースの表示
+    "editor.snippetSuggestions": "top", // スニペット候補の表示（Emmet）
+    "editor.tabSize": 4, // タブのサイズ変更
+    "files.insertFinalNewline": true, // ファイルの保存時に末尾を改行
+    "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+    "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
+    },
+    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p",
+    // タグ内の記述はフォーマットしない
+    "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+    "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+    "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+    "search.exclude": {
+        // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+        "**/tmp": true
+    },
+    "editor.insertSpaces": true,
+    // HTML タグの自動クローズを有効/無効にします。
+    "html.autoClosingTags": false,
+    //改行コードの明示設定
+    "files.eol": "\n",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pug",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
 }
