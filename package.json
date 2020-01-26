@@ -6,7 +6,8 @@
   "scripts": {
     "e2e": "npx jest ./spec/e2e.spec.js",
     "visual": "npx jest ./spec/visual.spec.js",
-    "visual-update": "npx jest ./spec/visual.spec.js --updateSnapshot"
+    "visual-update": "npx jest ./spec/visual.spec.js --updateSnapshot",
+    "snap": "npx jest ./spec/snapshot.spec.js"
   },
   "repository": {
     "type": "git",
