@@ -1,0 +1,107 @@
+
+/**
+*   Design
+* =================================================================== */
+@import "_base";
+@import "_layout";
+@import "_utility";
+@import "_color";
+@import "_font";
+@import "_component";
+@import "_project";
+@import "_button";
+@import "_card";
+@import "_menubar";
+@import "_hero";
+@import "_header";
+@import "_chat";
+@import "_luminous";
+
+/* =================================================================== */
+
+
+/* 選択ボタンのスタイル当て */
+.originalFileBtn {
+  position: relative;
+  display: inline-block;
+  padding: rem(2) 1em;
+  border: 3px solid;
+}
+
+/* 選択ボタンのスタイル当て */
+.originalFileBtn input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* 利用規約画面のページ内スクロール */
+.p-overflow-scroll {
+  height: rem(360);
+  overflow: scroll;
+  /* overflow-scrollを実装した場合、iOSで起こる不具合に対して追加記述 */
+  -webkit-overflow-scrolling: touch;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+
+.p-profile-textarea {
+  width: 100%;
+  min-height: rem(180);
+  resize: vertical;
+  background-color: #fff;
+  border-color: #9e9e9e;
+  border-width: thin;
+  border-radius: 3px;
+}
+
+//labelを見やすさ重視のスタイルに修正
+label {
+  @include font-size(18);
+  font-weight: 500;
+  color: #757575 !important;
+}
+
+/* ダイアログのスタイルを上書き修正 */
+//ダイアログ全体のスタイル
+.dg-main-content {
+  height: rem(165);
+}
+
+//余白設定
+.dg-content-body {
+  padding-top: rem(25);
+  padding-bottom: rem(25);
+}
+
+//ボタンのサイズ他
+.dg-btn {
+  width: rem(144);
+  height: rem(40);
+  border: 1px solid $color-main;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+//ダイアログ本文用
+.dg-content {
+  text-align: center;
+  @include font-size(16);
+  font-weight: 500;
+}
+//OK了承のカラースタイル
+.dg-btn--ok {
+  color: $color-white;
+  background-color: $color-main;
+}
+
+//NG拒否のカラースタイル
+.dg-btn--cancel {
+  color: $color-text;
+  background-color: $color-white;
+}
+/********************************/

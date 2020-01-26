@@ -1,0 +1,33 @@
+.c-header {
+  position: relative;
+  width: 100%;
+  height: rem(60);
+  background: #fff 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  & > a:active {
+    opacity: 0.5;
+  }
+}
+
+.c-header__title {
+  display: inline-flex;
+  align-items: center;
+  height: rem(20);
+}
+
+.c-header__icon {
+  position: absolute;
+  top: rem(10);
+  left: 6%;
+  display: inline-flex;
+  align-items: center;
+  width: rem(40);
+  height: rem(40);
+  padding: rem(15);
+}
+
+.c-header--sticky {
+  position: sticky;
+  top: 0;
+}

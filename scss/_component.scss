@@ -1,0 +1,131 @@
+/**
+*   Component
+*   使い回しのできるパーツを整理しまとめておくクラス
+*   接頭辞としてc-をつける
+*   また使い回しの効く状態クラスもここ
+*   接頭辞として-をつける
+**/
+
+//Materialize準拠の影 状態として付与する
+.-shadow {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+//アニメーション。アイコンが跳ねる想定。
+.poyo {
+  animation: poyo 0.9s linear 0s infinite;
+}
+
+@keyframes poyo {
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+
+  10% {
+    transform: scale(1.1, 0.9) translate(0%, 5%);
+  }
+
+  40% {
+    transform: scale(1.2, 0.8) translate(0%, 15%);
+  }
+
+  50% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+
+  60% {
+    transform: scale(0.9, 1.2) translate(0%, -100%);
+  }
+
+  75% {
+    transform: scale(0.9, 1.2) translate(0%, -20%);
+  }
+
+  85% {
+    transform: scale(1.2, 0.8) translate(0%, 15%);
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+}
+//ステータスアイコンの設定用
+.c-status-icon {
+  position: absolute;
+  top: rem(20);
+  right: rem(20);
+  border-radius: 5px; //車両情報のステータス用に設定
+}
+
+//画像の比率を保ったままに表示する（様に見せる）
+.c-img-aspectRatio {
+  object-fit: contain;
+  width: 100%;
+  height: rem(100);
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+
+//画像を最大表示する
+.c-img-aspectRatio--full {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  //resetCSSがmergeされたら不要になる。
+  //画像の下要素の間に隙間が発生するため記述
+  vertical-align: bottom;
+  //上辺の両角のみ丸みをもたせる
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+//アスペクト比4:3で伸縮させる。
+.c-img-aspectRatio--43 {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  //resetCSSがmergeされたら不要になる。
+  //画像の下要素の間に隙間が発生するため記述
+  vertical-align: bottom;
+  //上辺の両角のみ丸みをもたせる
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+//使いまわしのできるテキスト入力エリア
+.c-textArea {
+  width: 90%;
+  height: rem(180);
+  appearance: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  opacity: 1;
+  padding: rem(5) rem(10);
+
+  outline: none;
+  outline-offset: -2px;
+  //テキストリサイズ禁止（右下の三角を消す）
+  resize: none;
+  //フォーカス時のリセット
+  &:focus{
+    border: 1px solid #cccccc;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+//border-rightのみ付与する
+.-border-right {
+  border-right: 1px solid #e0e0e0;
+}

@@ -1,0 +1,87 @@
+@mixin btn {
+  height: 40px;
+  border: 1px solid $color-main;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.c-btn {
+  width: rem(300);
+
+  @include btn;
+}
+
+.c-btn--half {
+  width: rem(144);
+
+  @include btn;
+}
+
+.c-btn--icon {
+  display: flex;
+  width: rem(160);
+  background: $color-white 0% 0% no-repeat padding-box;
+
+  @include btn;
+}
+
+.c-floatingNav {
+  position: sticky;
+  bottom: rem(70);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: rem(70);
+  height: rem(70);
+  margin-left: 78%;
+  opacity: 1;
+}
+
+.c-floatingNav__Btn {
+  width: rem(60);
+  height: rem(60);
+  padding: 0;
+  background-color: $color-main;
+  border-style: none;
+  border-radius: 50px;
+}
+
+.-mainColor {
+  background: $color-main 0% 0% no-repeat padding-box;
+}
+
+.-mainColor:disabled {
+  background: #DFDFDF 0% 0% no-repeat padding-box !important;
+  pointer-events: none;
+  box-shadow: none;
+  color: #9F9F9F !important;
+  cursor: default;
+}
+
+.-white {
+  background: $color-white 0% 0% no-repeat padding-box;
+}
+//予定一覧のタブボタン
+.p-tab-btn--green {
+  width: rem(165);
+  height: rem(50);
+  background: #30bfa7 0% 0% no-repeat padding-box;
+  border-radius: 3px 3px 0 0;
+  opacity: 1;
+}
+
+.p-tab-btn--white {
+  width: rem(165);
+  height: rem(50);
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 5px 5px 0 0;
+  opacity: 1;
+}
+
+.p-btn-square {
+  width: rem(50);
+  height: rem(50);
+  border: 1px solid $color-main;
+  border-radius: 0;
+  background: #30bfa7 0% 0% no-repeat padding-box;
+}
