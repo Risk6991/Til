@@ -6,8 +6,11 @@ module.exports = {
         "stylelint-config-recess-order",
         "stylelint-config-prettier",
         "stylelint-prettier/recommended"
+        //より厳しく設定する場合は、standardを導入する
     ],
     rules: {
+        //◎Stylelint Config Generatorで生成しprettierとコンフリクトしない様に設定
+        //https://maximgatilin.github.io/stylelint-config/
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
         "string": "double",
