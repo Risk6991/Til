@@ -89,4 +89,17 @@
         "yaml",
         "yml"
     ],
+    "cSpell.words": [
+        "aracan",
+        "autoprefix",
+        "datepicker",
+        "dropdown",
+        "flexbox",
+        "hiragino",
+        "hoge",
+        "oocss",
+        "poyo",
+        "rscss",
+        "stylelint"
+    ],
 }

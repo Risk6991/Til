@@ -11,7 +11,8 @@
         "lint": "npx eslint ./*.js",
         "lint-fix": "npx eslint ./*.js --fix",
         "prettier": "npx prettier ./*.html --write",
-        "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
+        "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
+        "stylelint-check": "npx stylelint-config-prettier-check"
     },
     "repository": {
         "type": "git",
@@ -39,7 +40,14 @@
         "jest-puppeteer": "^4.1.1",
         "prettier": "^1.19.1",
         "puppeteer": "^1.16.0",
-        "reg-suit": "^0.8.6"
+        "reg-suit": "^0.8.6",
+        "stylelint": "^13.0.0",
+        "stylelint-config-prettier": "^8.0.1",
+        "stylelint-config-recess-order": "^2.0.3",
+        "stylelint-config-recommended-scss": "^4.1.0",
+        "stylelint-config-standard": "^19.0.0",
+        "stylelint-prettier": "^1.1.2",
+        "stylelint-scss": "^3.13.0"
     },
     "dependencies": {
         "jquery": "^3.4.1"
