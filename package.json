@@ -12,7 +12,7 @@
         "lint-fix": "npx eslint ./*.js --fix",
         "prettier": "npx prettier ./*.html --write",
         "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
-        "stylelint-check": "stylelint-config-prettier-check"
+        "stylelint-check": "npx stylelint-config-prettier-check"
     },
     "repository": {
         "type": "git",
