@@ -4,12 +4,11 @@ module.exports = {
     extends: [
         "stylelint-config-recommended-scss",
         "stylelint-config-standard",
-        "stylelint-config-prettier",
         "stylelint-config-recess-order",
         "stylelint-prettier/recommended",
+        "stylelint-config-prettier",
     ],
     rules: {
-        "string-quotes": "double", // ダブルクォーテーションに揃える
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
         // @ルールのベンタープリフィックス禁止
@@ -17,7 +16,7 @@ module.exports = {
         //'font-family'はスペースで区切られたフォント名の場合クオートで囲む
         "font-family-name-quotes": "always-where-recommended",
         //'font-weight'はnormalなどのキーワードが使える場合はそちらを使う（400はNG）
-        "font-weight-notation": "named-where-possible",
+        "font-weight-notation": null,
         // 'url()'の引数はクオートで囲む
         "function-url-quotes": "always",
         //'@media'内のベンダープリフィックス禁止
@@ -27,11 +26,11 @@ module.exports = {
         // プロパティのベンダープリフィックス禁止
         "property-no-vendor-prefix": true,
         // '[type=text]'などのセレクタの属性はクオートで囲まない
-        "selector-attribute-quotes": "never",
+        "selector-attribute-quotes": null,
         // セレクタのベンダープリフィックス禁止
         "selector-no-vendor-prefix": true,
-        // 文字列はシングルクオートで囲む
-        "string-quotes": "single",
+        // 文字列はダブルクォートで囲む
+        "string": "double",
         // 値のベンダープリフィックス禁止
         "value-no-vendor-prefix": true,
     },
