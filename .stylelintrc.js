@@ -33,5 +33,7 @@ module.exports = {
         "string": "double",
         // 値のベンダープリフィックス禁止
         "value-no-vendor-prefix": true,
+        //一行目のstringを許容
+        ignoreAtRules:["string"]
     },
 };
