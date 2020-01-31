@@ -3,16 +3,14 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 /* Remove default padding */
 /* デフォルトのpaddingを削除 */
-ul[class],
-ol[class] {
-  padding: 0;
+ul,
+ol {
+    padding: 0;
 }
-
 /* Remove default margin */
 /* デフォルトのmarginを削除 */
 body,
@@ -23,119 +21,112 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
-
 /* Remove list styles on ul, ol elements with a class attribute */
 /* class属性を持つul、ol要素のリストスタイルを削除 */
 ul[class],
 ol[class] {
-  list-style: none;
+    list-style: none;
 }
-
 /* A elements that don't have a class get default styles */
 /* classを持たない要素はデフォルトのスタイルを取得 */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
-
 /* Make images easier to work with */
 /* img要素の扱いを簡単にする */
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
-
 /* Inherit fonts for inputs and buttons */
 /* inputやbuttonなどのフォントは継承を定義 */
 input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
-
 /* Remove all animations and transitions for people that prefer not to see them */
 /* 見たくない人用に、すべてのアニメーションとトランジションを削除 */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
-
- /* remでサイズ指定を行うための関数 */
+/* remでサイズ指定を行うための関数 */
 @function rem($value) {
-  @return #{$value / 16}rem;
+    @return #{$value / 16}rem;
 }
 
 html {
-  /* Typography */
-  //基準フォントサイズを指定。現プロジェクトがSPでも16px前提のため!important
-  font-size: rem(16)!important;
-  color: #333;
-
+    /* Typography */
+    //基準フォントサイズを指定。現プロジェクトがSPでも16px前提のため!important
+    font-size: rem(16) !important;
+    color: #333;
 }
 
 body {
-/* Set core body defaults */
-/* bodyのデフォルトを定義 */
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    /* Set core body defaults */
+    /* bodyのデフォルトを定義 */
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 
-  @font-face {
-    font-family: "Original Yu Gothic";
-    src: local("Yu Gothic Medium");
-    font-weight: 100;
-  }
-  @font-face {
-    font-family: "Original Yu Gothic";
-    src: local("Yu Gothic Medium");
-    font-weight: 200;
-  }
-  @font-face {
-    font-family: "Original Yu Gothic";
-    src: local("Yu Gothic Medium");
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: "Original Yu Gothic";
-    src: local("Yu Gothic Medium");
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: "Original Yu Gothic";
-    src: local("Yu Gothic Bold");
-    font-weight: bold;
-  }
+    @font-face {
+        font-family: "Original Yu Gothic";
+        src: local("Yu Gothic Medium");
+        font-weight: 100;
+    }
+    @font-face {
+        font-family: "Original Yu Gothic";
+        src: local("Yu Gothic Medium");
+        font-weight: 200;
+    }
+    @font-face {
+        font-family: "Original Yu Gothic";
+        src: local("Yu Gothic Medium");
+        font-weight: 300;
+    }
+    @font-face {
+        font-family: "Original Yu Gothic";
+        src: local("Yu Gothic Medium");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Original Yu Gothic";
+        src: local("Yu Gothic Bold");
+        font-weight: bold;
+    }
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic",
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Sans Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Sans Emoji";
 }
 
 //フォント設定を継承させる
 * {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 //訪問済みのリンクにカラー変更させない
 a,
 a:visited {
-  color: inherit;
+    color: inherit;
 }
